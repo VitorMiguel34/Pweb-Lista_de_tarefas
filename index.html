@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas com web storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #formContainer{
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header class="flex justify-center items-center bg-black text-white h-8">
+        <p class="justify-center items-center font-semibold">LISTA DE TAREFAS</p>
+    </header>
+
+    <section id="container1" class="flex justify-center items-center bg-gray-200 p-4 ">
+        <div id="formContainer" class="flex justify-center bg-gray-200 rounded-xl shadow-lg">
+            <form action="" class="bg-black p-6 rounded-xl space-y-4">
+                <input id="tarefa" type="text" placeholder="Digite sua tarefa aqui..." class="p-2 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500" autocomplete="off">
+                <button onclick="atualizarListaDeTarefas()" type="button" class="hover:bg-green-200 transition duration-300 bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300 w-full">
+                    Adicionar Tarefa
+                </button>
+            </form>
+        </div>
+    </section>
+    <div class="flex justify-center p-4 border-4 border-black">
+        <h1>TAREFAS</h1>
+    </div>
+    <section id="container2" class="flex justify-center items-center bg-white p-4 border-4 border-black">
+        <ul id="lista">
+            
+        </ul>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
